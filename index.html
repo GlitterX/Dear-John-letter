@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+            亲爱的，<br />
+            <span class="space"/><span class="space"/><span class="space"/><span class="space"/>这是我第一次，可能也是最后一次给你写信，因为写完这封信，我将要离开你。亲爱的，世界上诸多事情走到最后都不能回到初时的美丽。还记得我们才相识的时候吗？那时我总是彻夜难眠，眼前只有你的样子，此时此刻亦是如此。第一次说我爱你的时候，我慌张、欣喜，像个天真的孩子，心中没有掺杂任何东西，只有爱，你就是上天赐予我的礼物，比任何东西都珍贵。<br />
+            <span class="space"/><span class="space"/><span class="space"/><span class="space"/>爱情，是瞬间发生的事情。有人说，爱情不是奇遇，可是当我们在这样的奇遇中有了爱情，却早已注定了分离。适合走到最后的人，从一开始就是为了彼此而生的。我相信这一点。相信冥冥中注定的相遇和分离。有心的人，再远也会记挂对方。无心的人，近在咫尺却远在天涯。所有爱情都会过期，关键在于它驻留在何处。如果它停留在曾经，那么它只属于这个时点;如果它停留在你心里，那么它就会成为永恒，甚至超越你的生命。一直以为幸福在远方，在可以追逐的未来。后来才发现，那些握过的手、唱过的歌、流过的泪、爱过的人，所谓的曾经，就是幸福。我们把快乐留在嘴边，我们将邂逅融在眼中，我们让告别挂在脚边，我们将往事留存在心中。一切终将成为回忆……我希望相爱的两个人永远都不要说出分手二字，这是多么伤感的字眼。<br />
+            <span class="space"/><span class="space"/><span class="space"/><span class="space"/>跟你在一起的每一天都是快乐和幸福的，是你让我懂得了什么叫爱，如何去关心一个人、呵护一个人，如何做一个让你开心的人，谢谢你让我认识了许许多多我以前从未知道和做过的事情。和你在一起的日子里，让你的眼泪流过了不知多少次，真的对不起你，让你伤心难过不是我的本意。<br />
+            <span class="space"/><span class="space"/><span class="space"/><span class="space"/>对你的承诺，我可能实现不了了，但对于我来说，我已经努力的去做了。一个承诺不是一朝一夕就能实现的，现实的力量是残酷的，时间的流逝是无情的，我再也没有勇气去让你等我来兑现了。虽然你可能不想听，但是我要你知道，你永远是我的一部分。你在我心里占有一个特殊的位置，那个地方会永远为你保留，没有人可以取代。你是我第一个全心全意爱过的人。不管未来怎样都是如此，就是因为爱过你，我的生命才能比以前更美好。<br />
+            <span class="space"/><span class="space"/><span class="space"/><span class="space"/>当你决定要做一件事的时候，直到最终有结果之前，总是会有不安的感觉，甚至是后悔。当要离开你的时候，心在一阵一阵的痛。或许这就是所谓绝望的样子吧。我是个相当重感情的人，所以在接下来的日子里，我还是会惦记你有没有穿暖、有没有吃饭、有没有睡觉，我不知道这样的状态会持续多久，我只知道在接下来的这个季节，可能是我要经历的最寒冷的冬天。请原谅我曾经对你的“啰嗦”，对你的“喋喋不休”，因为那些都是我用最最平淡的语言在关心你。爱……平平淡淡才是真。<br />
+            <span class="space"/><span class="space"/><span class="space"/><span class="space"/>照顾好自己，做强大的自己，只有自己能够依靠。用心制定自己的目标、规划自己的人生，不断的学习，不要止步于眼前，但是任何时候不要忘记自己的初衷，做真实的自己。<br />
+            <span class="space"/><span class="space"/><span class="space"/><span class="space"/>无论今后会发生什么，只要你还能想起我、需要我，我都会马上回应。<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					亲爱的，这是我们相爱在一起的时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					爱你<br/>
+					<div class="signature">Glitter</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2013, 1, 12);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
